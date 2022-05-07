@@ -20,10 +20,14 @@ podman exec -it ejabberd bin/ejabberdctl register james localhost james
 4. Click on Submit.
 
 ### Login as user
+```
 go run example.go -server=localhost -username=james@localhost -password=james -notls=true -debug=true
+```
 
 ### Anonymous login (optional)
-`podman exec -it ejabberd vi conf/ejabberd.yml`
+```
+podman exec -it ejabberd vi conf/ejabberd.yml
+```
 ```yml
 hosts:
   - localhost
@@ -33,6 +37,10 @@ auth_method:
   - anonymous
 ```
 Reload config:
-`podman exec ejabberd bin/ejabberdctl reload_config`
+```
+podman exec ejabberd bin/ejabberdctl reload_config
+```
 Login:
-`go run example.go -server=localhost -notls=true -debug=true`
+```
+go run example.go -server=localhost -notls=true -debug=true
+```
