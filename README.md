@@ -10,7 +10,7 @@ podman exec -it ejabberd bin/ejabberdctl register james localhost james
 ```
 
 ### See everyone online
-1. Login at http://localhost:5280/admin and go to 'Virtual Hosts' -> 'server' -> 'Shared Roster Groups'
+1. Login at http://localhost:5280/admin and go to 'Virtual Hosts' -> 'localhost' -> 'Shared Roster Groups'
 2. Create a new Shared Roster, with identifier 'EveryBody'. Click on 'Add new'.
 3. Click on 'EveryBody' and fill in the following ('Name' and 'Displayed Groups' are case-sensitive):
    - Name: EveryBody
