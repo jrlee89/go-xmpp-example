@@ -24,7 +24,7 @@ podman exec -it ejabberd bin/ejabberdctl register james localhost james
 go run example.go -server=localhost -username=james@localhost -password=james -notls=true -debug=true
 ```
 
-### Anonymous login (optional)
+### Anonymous login 
 ```
 podman exec -it ejabberd vi conf/ejabberd.yml
 ```
